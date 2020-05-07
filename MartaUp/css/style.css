@@ -1,0 +1,261 @@
+.* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.header {
+    background-image: url(../images/header-bg.jpg);
+    min-height: 793px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.menu__list {
+    display: flex;
+
+}
+
+.menu__list li+li {
+    padding-left: 50px;
+}
+
+.login {
+    margin-right: 44px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.menu__list a {
+    opacity: 0.5;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .5s;
+    /* время изменения прозрачности текста*/
+}
+
+/*эффект при наведении (пишем слитно)*/
+.menu__list a:hover {
+    opacity: 1;
+
+}
+
+.sign-up {
+    text-transform: uppercase;
+    color: #250F8A;
+    font-weight: 600;
+    background-color: #fff;
+    padding: 8px 43px;
+    /*расширяем пространсто под кнопку*/
+    border-radius: 20px;
+}
+
+.header-slider {
+    padding-top: 111px;
+}
+
+.header-slider__item {}
+
+.header-slider__item-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-slider__item-info {
+    max-width: 506px;
+    color: #fff;
+    /*задаем общий цвет для текста в блоке*/
+}
+
+.header-slider__title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 60px;
+    margin-bottom: 10px;
+    /*делаем отступ до следующего элемента*/
+
+}
+
+.header-slider__description {
+    font-size: 24px;
+    line-height: 55px;
+    margin-bottom: 60px;
+
+}
+
+.header-slider__btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #250F8A;
+    padding: 13px 39px;
+    /*p13-39 (сокращение)*/
+    background-color: #FFCA00;
+    border-radius: 25px;
+}
+
+.header-slider__item-images {
+    margin-right: 82px;
+    margin-top: 10px;
+}
+
+.header-dots {
+    list-style: none;
+    position: absolute;
+    /*указываем для перемещения кнопок слайдера*/
+    right: 0;
+    /*переносим кнопки в правую част блока*/
+    top: 50%;
+    /*поднимаем на середину блока*/
+}
+
+.header-dots button {
+    border: none;
+    background-color: #fff;
+    opacity: .5;
+    font-size: 0;
+    padding: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 3.5px;
+    cursor: pointer;
+    /*меняет значек указателя на руку*/
+    outline: none;
+    display: block;
+    /*делаем эл-т блочным, чтобы применился margin*/
+    margin: 10px auto;
+    /*выравнивает точки по середине*/
+
+
+}
+
+.header-dots .slick-active button {
+    width: 15px;
+    opacity: 1;
+}
+
+.specialised {
+    padding: 55px 0 93px;
+    /*делаем отступ от блока верх и низ*/
+    background-image: url(../images/spesial-bg.svg);
+    background-position: left bottom;
+    /*выставляем картинку в левую нижнюю часть*/
+    background-repeat: no-repeat;
+    color: #202020;
+    text-align: center;
+
+}
+
+
+.spesialised__title title {
+    margin-bottom: 96px;
+}
+
+.title {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.specialised__items {
+    display: flex;   /*расставляем блоки по горизонтали*/
+    justify-content: space-between;
+    min-width: 980px;
+    margin: 0 auto;
+}
+
+.specialised__item {
+    width: 280px;
+
+}
+
+.specialised__item-img {
+    margin-bottom: 23px;
+    min-height: 159px;
+
+}
+
+.specialised__item-title {
+    margin-bottom: 11px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.specialised__item-text {
+    padding: 0 10px;
+    color: #272727;
+    opacity: 0.7;
+}
+
+.advantages {
+    padding-top: 64px;
+    background-color: #F4F9FD;
+   
+}
+
+
+.advantages-box {
+    padding-bottom: 76px;
+    display: flex ;
+    justify-content: space-between;
+    
+}
+
+.advantages-box__info {
+    max-width: 456px;
+    padding-top: 60px;
+    background-image: url(../images/title-bg-1.svg);
+    background-repeat: no-repeat;
+    background-position: 23px 70px;
+
+}
+
+.advantages-box__title {
+    color: #202020;
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: bold;
+    padding: 68px 0 15px 48px;
+}
+
+.advantages-box__text {
+    padding-left: 48px;
+    color:#272727;
+
+}
+.advantages-box__text p{
+    margin: 12px 0;
+}
+
+.advantages-box__images {
+    
+}
